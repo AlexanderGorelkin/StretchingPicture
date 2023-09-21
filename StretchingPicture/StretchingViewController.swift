@@ -14,7 +14,8 @@ final class StretchingViewController: UIViewController {
     
     private lazy var strecthImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        imageView.image = UIImage(named: "wall")
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
